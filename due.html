@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's Due Rosan Edition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>What's Due Rosan Edition</h1>
+    
+    <!-- Calendar Section -->
+    <h2>Calendar</h2>
+    <button id="prevMonthBtn">Previous</button>
+    <button id="nextMonthBtn">Next</button>
+    <div id="calendar"></div>
+
+    <!-- Modal to add event -->
+    <div id="eventModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2>Add Event</h2>
+        <input type="text" id="eventText" placeholder="Event details">
+        <button id="saveEventBtn">Save Event</button>
+      </div>
+    </div>
+    
+    <div id="eventDetails"></div>
+
+    <!-- To-Do List Section -->
+    <h2>To-Do List</h2>
+    <input type="text" id="newTodo" placeholder="Add a task">
+    <button id="addTodoBtn">Add Task</button>
+    <ul id="todoItems"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
